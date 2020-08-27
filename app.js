@@ -1,12 +1,12 @@
 
 // let account = document.getElementById("username").value;
-// let password = document.getElementById("password").value;
+let password = document.getElementById("password").value;
 
 
 
 
 
-// function checkpassword(){
+function checkpassword(){
 
   var mysql = require('mysql');
 
@@ -37,7 +37,7 @@
   });
   
   
-// }
+}
 
 
 
