@@ -23,10 +23,10 @@
     // echo "Error: " . $sql . "<br>" . $conn->error;
 	// }
 		if($checkpassword === $password){
-			echo "Your password is correct"
+			echo "Your password is correct";
 		}
 		else{
-			echo "Please try again."
+			echo "Please try again.";
 		}
 $conn->close();
 
