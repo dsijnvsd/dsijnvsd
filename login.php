@@ -7,7 +7,7 @@
 	$servername = "192.168.0.31";
 	$dbusername = "admin";
 	$db = "testing";
-	$dbPassword = '20200101';
+	$dbPassword = "20200101";
 	$address = '';
 	$conn = mysqli_connect($servername, $dbusername,$dbPassword, $db);
 	if ($conn->connect_error) {
