@@ -8,13 +8,13 @@
 	$dbusername = "admin";
 	$db = "testing";
 	$dbPassword = '20200101';
-
+	$address = '';
 	$conn = mysqli_connect($servername, $dbusername,$dbPassword, $db);
 	if ($conn->connect_error) {
 		echo "Connection Error";
 	}
 
-	$sql = "INSERT INTO testing.customers (name, address, password) VALUES ('$username','$password')";
+	$sql = "INSERT INTO testing.customers (name, address, password) VALUES ('$username', '$address','$password')";
 
 	if ($conn->query($sql) === TRUE) {
     echo "New record created successfully";
