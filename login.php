@@ -9,7 +9,7 @@
 	$db = "wenhao";
 	$dbPassword = '20200101';
 
-	$conn = mysqli_connect($servername, $dbusername,$dbPassword, $db);
+	$conn = mysql_connect($servername, $dbusername,$dbPassword, $db);
 	if ($conn->connect_error) {
 		echo "Connection Error";
 	}
