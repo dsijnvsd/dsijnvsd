@@ -14,15 +14,20 @@
 		echo "Connection Error";
 	}
 
-	$sql = "INSERT INTO testing.customers (name, address, password) VALUES ('$username', '$address','$password')";
+	$checkpassword = "SELECT password from testing.customers where name=?",$username;
 
-	if ($conn->query($sql) === TRUE) {
-    echo "New record created successfully";
-	}
-	else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
-	}
-
+	// if ($conn->query($sql) === TRUE) {
+    // echo "New record created successfully";
+	// }
+	// else {
+    // echo "Error: " . $sql . "<br>" . $conn->error;
+	// }
+		if($checkpassword === $password){
+			echo "Your password is correct"
+		}
+		else{
+			echo "Please try again."
+		}
 $conn->close();
 
 ?>
