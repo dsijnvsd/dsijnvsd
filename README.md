@@ -17,6 +17,6 @@ public $Host = 'smtp.mailtrap.io';
 public $Mailer = 'smtp';
 public $SMTPAuth = true;
 public $Username = '';
-public $Password = '';
+public $Password = '123456';
 //public $SMTPSecure = 'tls';
 ```
