@@ -31,7 +31,7 @@
 // $conn->close();
 
 
-window.open("SimpleTax.html");
+echo 'window.open("SimpleTax.html")';
 ?>
 </body>
 </html>
