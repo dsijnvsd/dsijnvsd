@@ -24,6 +24,12 @@
     echo "Error: " . $sql . "<br>" . $conn->error;
 	}
 
+
+
+	while($row = mysql_fetch_array($result)) {
+		echo $row['column_name']; // Print a single column data
+		echo print_r($row);       // Print the entire row data
+	}
 $conn->close();
 
 ?>
