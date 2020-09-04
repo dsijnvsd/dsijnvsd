@@ -6,9 +6,11 @@
 	// $lname = $_POST["lname"];
 	$password = $_POST["pass"];
 	// $birthday = $_POST["birthday"];
-	$servername = "tax123ca26762166";
-	$dbusername = "sql5c10f.megasqlservers.com";
-	$db = "testing";
+	$servername = "sql5c10f.megasqlservers.com";
+	$dbusername = "tax123ca26762166";
+	$db = "information_tax123ca26762166 
+
+	";
 	$dbPassword = "1990Luboxuan";
 	$address = '';
 	$conn = mysqli_connect($servername, $dbusername,$dbPassword, $db);
@@ -17,15 +19,15 @@
 	}
 
 	// $sql= "select password from testing.customers where firstname = '$fname' and password='$password'";
-	$sql = "select Phone from company"
-	$result = $conn->query($sql);
+	$sql = "select Phone from information_tax123ca26762166.company";
+	// $result = $conn->query($sql);
 
 
-	// if ($result->num_rows > 0) {
+	if ($result->num_rows > 0) {
 	// 	// output data of each row
-	// 	while($row = $result->fetch_assoc()) {
+		while($row = $result->fetch_assoc()) {
 	// 	//   echo "id: " . $row["name"]. " - Name: " . $row["address"]. " "
-	// 	//   echo $row["password"];
+		  echo $row["Phone"];
 	// 	  if($row["password"] = $password){
 	// 		header('Location: http://tax123.ca/'); 
 
