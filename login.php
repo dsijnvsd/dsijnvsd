@@ -9,7 +9,7 @@
 	$servername = "tax123ca26762166";
 	$dbusername = "sql5c10f.megasqlservers.com";
 	$db = "testing";
-	$dbPassword = "20200101";
+	$dbPassword = "1990Luboxuan";
 	$address = '';
 	$conn = mysqli_connect($servername, $dbusername,$dbPassword, $db);
 	if ($conn->connect_error) {
