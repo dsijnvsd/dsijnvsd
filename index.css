@@ -1,0 +1,113 @@
+
+.tax_return{
+    margin: 10%;
+}
+.account_creation button{
+    margin-left:20px ;
+    
+}
+main div h2{
+    color: #3498DB
+}
+
+.about_you{
+    border: solid 1px rgb(156, 156, 156);
+    margin:16px 0px;
+    margin-left: none;
+    padding: 5px;
+    border-radius: 3px;  
+}
+
+.mailing_address{
+    border: solid 1px rgb(156, 156, 156);
+    margin:16px 0px;
+    margin-left: none;
+    padding: 5px;
+    border-radius: 3px;  
+}
+
+
+
+.about_your_residence{
+    border: solid 1px rgb(156, 156, 156);
+    margin:16px 0px;
+    margin-left: none;
+    padding: 5px;
+    border-radius: 3px;  
+}
+.family_information{
+    border: solid 1px rgb(156, 156, 156);
+    margin:16px 0px;
+    margin-left: none;
+    padding: 5px;
+    border-radius: 3px;  
+}
+.misc{
+    border: solid 1px rgb(156, 156, 156);
+    margin:16px 0px;
+    margin-left: none;
+    padding: 5px;
+    border-radius: 3px;  
+}
+.CRA_account{
+    border: solid 1px rgb(156, 156, 156);
+    margin:16px 0px;
+    margin-left: none;
+    padding: 5px;
+    border-radius: 3px;  
+}
+.account_creation{
+    border: solid 1px rgb(156, 156, 156);
+    margin:16px 0px;
+    margin-left: none;
+    padding: 5px;
+    border-radius: 3px;   
+} 
+
+div select{
+    height: 40px;
+    border-radius: 3px;
+    width: 100px;
+    
+}
+div input{
+    height: 30px;
+    /* border-radius: 1px; */
+    padding: 18px;
+    margin: 5px;
+    width: 180px;
+}
+.date_of_death{
+    display: none;
+}
+/* .navbar-brand{
+    position: fixed;
+    margin-top:5%;
+}
+ */
+ label{
+     margin: 5px;
+ }
+ p{
+     margin: 5px;
+ }
+ .showhide1{
+    display: none;
+ }
+ .showhide2{
+    display: none;
+ }
+ .showhide3{
+    display: none;
+ }
+ .showhide4{
+    display: none;
+ }
+ .showhide5{
+    display: none;
+ }
+ .showhide6{
+    display: none;
+ }
+
+
