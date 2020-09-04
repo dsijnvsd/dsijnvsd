@@ -16,7 +16,7 @@
 
 	// $sql = "SELECT password from testing.customers where name= '$username";
 
-	$sql= "select * from testing.customers where name = 'Mike' and password='123456'";
+	$sql= "select * from testing.customers where name = '$username' and password='$password'";
 	// $result = mysqli_query($conn, $sql);
 	// $count=mysql_num_rows($result);
 	// if($count==1){
