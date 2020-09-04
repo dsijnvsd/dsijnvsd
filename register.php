@@ -15,7 +15,7 @@
 		echo "Connection Error";
 	}
 
-	$sql = "INSERT INTO testing.customers (name, address, password) VALUES ($username, $address,$password)";
+	$sql = "INSERT INTO testing.customers (name, address, password) VALUES ('$username', '$address','$password')";
 
 	if ($conn->query($sql) === TRUE) {
     echo "Your account is successfully created";
