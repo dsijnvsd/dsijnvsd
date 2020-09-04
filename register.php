@@ -8,12 +8,12 @@
 	$password = $_POST["pass"];
 	$birthday = $_POST["birthday"];
 	$companyname = $_POST["company_name"];
-	$servername = "192.168.0.31";
-	$dbusername = "admin";
+	$servername = "tax123ca26762166";
+	$dbusername = "sql5c10f.megasqlservers.com";
 	// $db = "testing";
 	$db = "information_tax123ca26762166";
 	
-	$dbPassword = '20200101';
+	$dbPassword = '1990Luboxuan';
 	$address = '';
 	$conn = mysqli_connect($servername, $dbusername,$dbPassword, $db);
 	if ($conn->connect_error) {
