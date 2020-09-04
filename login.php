@@ -2,7 +2,7 @@
 
 <?php
 	// $sinnumber = $_POST["sinnumber"];
-	$fname = $_POST["fname"];
+	$fname = $_POST["name"];
 	// $lname = $_POST["lname"];
 	$password = $_POST["pass"];
 	// $birthday = $_POST["birthday"];
