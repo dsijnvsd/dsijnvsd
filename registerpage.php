@@ -30,7 +30,7 @@
             <div class="form-group">
                 <input type="submit" class="btn btn-primary" value="Login">
             </div>
-            <p>Already have an account? <a href="login.php">Login</a>.</p>
+            <p>Already have an account? <a href="main.php">Login</a>.</p>
 </form>
 </body>
 </html>
