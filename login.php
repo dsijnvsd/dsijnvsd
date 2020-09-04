@@ -16,7 +16,7 @@
 
 	// $sql = "SELECT password from testing.customers where name= '$username";
 
-	$sql= "select * from testing.customers where name = '$username' and password='$password'";
+	$sql= "select password from testing.customers where name = '$username' and password='$password'";
 	// $result = mysqli_query($conn, $sql);
 	// $count=mysql_num_rows($result);
 	// if($count==1){
@@ -39,7 +39,11 @@
 		// output data of each row
 		while($row = $result->fetch_assoc()) {
 		//   echo "id: " . $row["name"]. " - Name: " . $row["address"]. " "
-		  echo $row["password"];
+		//   echo $row["password"];
+		  if($row["password"] = $password){
+			header('Location: http://25.29.164.31:5501/SimpleTax.html'); 
+		  }
+		  
 		
 		}
 	  } 
