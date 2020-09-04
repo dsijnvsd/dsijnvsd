@@ -12,32 +12,18 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
    <div class="wrapper">
         <h2>Login</h2>
         <p>Please fill in your credentials to login.</p>
         <form action="login.php" method="post">
             <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
                 <label>Username</label>
-                <input type="text" name="username" class="form-control" required>
+                <input type="text" name="name" class="form-control" required>
 
             </div>    
             <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
                 <label>Password</label>
-                <input type="password" name="password" class="form-control" required>
+                <input type="password" name="pass" class="form-control" required>
 
             </div>
             <div class="form-group">

@@ -17,7 +17,7 @@
 	// $checkpassword = "SELECT password from testing.customers where name=$username";
 
 	// if ($conn->query($sql) === TRUE) {
-    header('Location: https://simpletax.ca/'); 
+    header('Location: http://25.29.164.31:5501/SimpleTax.html'); 
 // 	}
 // 	else {
 //     echo "Please try again.";
