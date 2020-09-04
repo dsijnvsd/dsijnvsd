@@ -15,13 +15,13 @@
 		echo "Connection Error";
 	}
 
-	$sql = "INSERT INTO testing.customer (name, address, password) VALUES ($username, $address,$password)";
+	$sql = "INSERT INTO testing.customers (name, address, password) VALUES ($username, $address,$password)";
 
 	if ($conn->query($sql) === TRUE) {
     echo "Your account is successfully created";
 	}
 	else {
-    echo "Please try again";
+    echo "Error: " . $sql . "<br>" . $conn->error;
 	}
 
 $conn->close();
