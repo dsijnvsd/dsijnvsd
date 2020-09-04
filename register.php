@@ -2,7 +2,6 @@
 <html><body>
 
 <?php
-
 	$username = $_POST["name"];
 	$password = $_POST["pass"];
 	$servername = "192.168.0.31";

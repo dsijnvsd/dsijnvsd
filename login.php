@@ -42,6 +42,7 @@
 		//   echo $row["password"];
 		  if($row["password"] = $password){
 			header('Location: http://tax123.ca/'); 
+			
 		  }
 		  
 		
