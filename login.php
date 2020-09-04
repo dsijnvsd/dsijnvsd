@@ -16,7 +16,7 @@
 
 	// $sql = "SELECT password from testing.customers where name= '$username";
 
-	$sql= "SELECT password FROM testing.customers WHERE name = '$username' AND password = '$password'";
+	$sql= "select * from testing.customers where name = 'Mike' and password='123456'";
 	// $result = mysqli_query($conn, $sql);
 	// $count=mysql_num_rows($result);
 	// if($count==1){
@@ -24,13 +24,25 @@
 	// 	$_SESSION['loggedin'] = true;
 	// 	$_SESSION['username'] = $username;
 	// }
+	$result = $conn->query($sql);
 
-	if ($conn->query($sql) === TRUE) {
-		header('Location: http://25.29.164.31:5501/SimpleTax.html'); 
+
+	// if ($conn->query($sql) === TRUE) {
+	// 	header('Location: http://25.29.164.31:5501/SimpleTax.html'); 
+	// 	}
+	// 	else{
+	// 		echo "error"
+	// 	}
+
+
+	if ($result->num_rows > 0) {
+		// output data of each row
+		while($row = $result->fetch_assoc()) {
+		  echo "id: " . $row["name"]. " - Name: " . $row["address"]. " " . $row["password"]. "<br>";
 		}
-		else{
-			echo "error"
-		}
+	  } else {
+		echo "0 results";
+	  }
 
 	// $check = mysqli_fetch_array($result);
 	
@@ -41,7 +53,7 @@
     // echo "Please try again.";
 	// }
 
-// $conn->close();
+$conn->close();
 
 
  
