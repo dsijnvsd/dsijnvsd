@@ -8,8 +8,8 @@
 	$password = $_POST["pass"];
 	$birthday = $_POST["birthday"];
 	$companyname = $_POST["company_name"];
-	$servername = "tax123ca26762166";
-	$dbusername = "sql5c10f.megasqlservers.com";
+	$servername = "sql5c10f.megasqlservers.com";
+	$dbusername = "tax123ca26762166";
 	// $db = "testing";
 	$db = "information_tax123ca26762166";
 	
