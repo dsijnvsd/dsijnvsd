@@ -18,7 +18,6 @@
 
 	$sql= "SELECT password FROM testing.customers WHERE name = '$username' AND password = '$password' ";
 	$result = mysqli_query($conn, $sql);
-	echo '$result', $result;
 	$count=mysql_num_rows($result);
 	if($count==1){
 		session_start();
