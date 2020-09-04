@@ -33,7 +33,7 @@
 		}
 	  } 
 	  else {
-		echo "0 results";
+		echo "username and password are not match";
 	  }
 
 $conn->close();
