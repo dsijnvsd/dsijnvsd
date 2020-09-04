@@ -14,7 +14,7 @@
 		echo "Connection Error";
 	}
 
-	$checkpassword = "SELECT password from testing.customers where name=$username";
+	$checkpassword = "SELECT duration from cprg251.movies where title=$username";
 
 	if ($conn->query($sql) === TRUE) {
     echo "New record created successfully";
