@@ -30,7 +30,8 @@
 // 		}
 // $conn->close();
 
-<script>url="SimpleTax.html";window.location.href=url;</script> 
+
+window.open("SimpleTax.html");
 ?>
 </body>
 </html>
