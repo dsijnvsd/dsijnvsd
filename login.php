@@ -23,7 +23,7 @@
 //     // echo "Error: " . $sql . "<br>" . $conn->error;
 // 	// }
 // 		if($checkpassword === $password){
-// 			echo "Your password is correct";
+// 			header('Location: https://simpletax.ca/'); 
 // 		}
 // 		else{
 // 			echo "Please try again.";
@@ -31,7 +31,7 @@
 // $conn->close();
 
 
-header('Location: https://www.bilibili.com/video/BV11W411172Z?from=search&seid=10394010984910354267');  
+ 
 ?>
 </body>
 </html>
