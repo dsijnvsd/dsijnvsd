@@ -10,7 +10,9 @@
 	$companyname = $_POST["company_name"];
 	$servername = "192.168.0.31";
 	$dbusername = "admin";
-	$db = "testing";
+	// $db = "testing";
+	$db = "information_tax123ca26762166";
+	
 	$dbPassword = '20200101';
 	$address = '';
 	$conn = mysqli_connect($servername, $dbusername,$dbPassword, $db);
