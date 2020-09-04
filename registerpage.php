@@ -21,7 +21,7 @@
         <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
                 <label>sinnumber</label>
                 <input type="text" name="sinnumber" class="form-control" required>
-                </div>  
+                </div>   
 
             <div class="form-group">
                 <label>Firstname</label>
@@ -42,6 +42,10 @@
             <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
                 <label>Date of birth</label>
                 <input type="date" name="birthday" class="form-control" required>
+
+                <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
+                <label>company name</label>
+                <input type="text" name="birthday" class="form-control" required>
 
             </div>
             <div class="form-group">
