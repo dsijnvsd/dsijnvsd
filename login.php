@@ -39,7 +39,7 @@
 		// output data of each row
 		while($row = $result->fetch_assoc()) {
 		//   echo "id: " . $row["name"]. " - Name: " . $row["address"]. " "
-		  echo . $row["password"].;
+		  echo $row["password"];
 		
 		}
 	  } 
