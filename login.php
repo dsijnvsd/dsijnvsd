@@ -31,7 +31,7 @@
 // $conn->close();
 
 
-echo 'window.open("SimpleTax.html")';
+header(“location: SimpleTax.html”); 
 ?>
 </body>
 </html>
