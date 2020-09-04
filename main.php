@@ -5,7 +5,7 @@
 <form action="login.php" method="post">
    Name: <input type="text" name="name"><br>
    Password: <input type="password" name="pass"><br>
-   <input type="submit" value="register">
+   <input type="submit" value="Login">
    <a href="registerpage.php">register</a>
 </form>
 </body>
