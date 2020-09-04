@@ -2,8 +2,11 @@
 <html><body>
 
 <?php
-	$username = $_POST["name"];
+	$sinnumber = $_POST["sinnumber"];
+	$fname = $_POST["fname"];
+	$lname = $_POST["lname"];
 	$password = $_POST["pass"];
+	$birthday = $_POST["birthday"];
 	$servername = "192.168.0.31";
 	$dbusername = "admin";
 	$db = "testing";
@@ -14,7 +17,7 @@
 		echo "Connection Error";
 	}
 
-	$sql = "INSERT INTO testing.customers (name, address, password) VALUES ('$username', '$address','$password')";
+	$sql = "INSERT INTO testing.customers (sinnumber, fname, lname, password, birthday) VALUES ($sinnumber, '$fname', '$lname', '$password','$birthday')";
 
 	if ($conn->query($sql) === TRUE) {
     echo "Your account is successfully created";
@@ -24,11 +27,6 @@
 	}
 
 
-
-	while($row = mysql_fetch_array($result)) {
-		echo $row['column_name']; // Print a single column data
-		echo print_r($row);       // Print the entire row data
-	}
 $conn->close();
 
 ?>

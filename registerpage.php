@@ -17,14 +17,31 @@
         <h2>Register</h2>
         <p>Register here</p>
         <form action="register.php" method="post">
-            <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
-                <label>Username</label>
-                <input type="text" name="name" class="form-control" required>
 
+        <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
+                <label>sinnumber</label>
+                <input type="text" name="sinnumber" class="form-control" required>
+                </div>  
+
+            <div class="form-group">
+                <label>Firstname</label>
+                <input type="text" name="fname" class="form-control" required>
             </div>    
+            <div class="form-group">
+                <label>Lastname</label>
+                <input type="text" name="lname" class="form-control" required>
+            </div>    
+
+
             <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
                 <label>Password</label>
                 <input type="password" name="pass" class="form-control" required>
+                </div>    
+
+
+            <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
+                <label>Date of birth</label>
+                <input type="date" name="birthday" class="form-control" required>
 
             </div>
             <div class="form-group">
