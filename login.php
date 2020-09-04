@@ -16,7 +16,7 @@
 		echo "Connection Error";
 	}
 
-	$sql= "select password from testing.customers where name = '$username' and password='$password'";
+	$sql= "select password from testing.customers where firstname = '$fname' and password='$password'";
 
 	$result = $conn->query($sql);
 

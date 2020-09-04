@@ -45,7 +45,7 @@
 
                 <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
                 <label>company name</label>
-                <input type="text" name="birthday" class="form-control" required>
+                <input type="text" name="company_name" class="form-control" required>
 
             </div>
             <div class="form-group">
