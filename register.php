@@ -19,7 +19,7 @@
 	}
 
 	// $sql = "INSERT INTO testing.customers (sin_number, firstname, lastname, password, birthday, company_name) VALUES ($sinnumber, '$fname', '$lname', '$password','$birthday','$companyname')";
-	$sql = "INSERT INTO testing.customers (Company_name, Phone) VALUES ( '$fname',$sinnumber)";
+	$sql = "INSERT INTO company (Company_name) VALUES ( '$fname')";
 
 	if ($conn->query($sql) === TRUE) {
     echo "Your account is successfully created";
