@@ -23,7 +23,7 @@
     // echo "Please try again.";
 	// }
 
-$conn->close();
+// $conn->close();
 
 
  
