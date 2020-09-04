@@ -2,10 +2,10 @@
 
 <body>
 
-<form action="login.php" method="post">
+<form action="register.php" method="post">
    Name: <input type="text" name="name"><br>
    Password: <input type="password" name="pass"><br>
-   <input type="submit" value="login">
+   <input type="submit" value="register">
 </form>
 </body>
 </html>

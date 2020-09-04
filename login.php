@@ -4,30 +4,30 @@
 
 	$username = $_POST["name"];
 	$password = $_POST["pass"];
-	$servername = "localhost";
-	$dbusername = "root";
-	$db = "cprg251";
-	$dbPassword = "123456";
-	
+	$servername = "192.168.0.31";
+	$dbusername = "admin";
+	$db = "testing";
+	$dbPassword = "20200101";
+	$address = '';
 	$conn = mysqli_connect($servername, $dbusername,$dbPassword, $db);
 	if ($conn->connect_error) {
 		echo "Connection Error";
 	}
 
-	$checkpassword = "SELECT duration from cprg251.movies where title=$username";
+	$checkpassword = "SELECT password from testing.customers where name=$username";
 
-	if ($conn->query($sql) === TRUE) {
-    echo "New record created successfully";
-	}
-	else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
-	}
-		// if($checkpassword === $password){
-		// 	echo "Your password is correct";
-		// }
-		// else{
-		// 	echo "Please try again.";
-		// }
+	// if ($conn->query($sql) === TRUE) {
+    // echo "New record created successfully";
+	// }
+	// else {
+    // echo "Error: " . $sql . "<br>" . $conn->error;
+	// }
+		if($checkpassword === $password){
+			echo "Your password is correct";
+		}
+		else{
+			echo "Please try again.";
+		}
 $conn->close();
 
 ?>
