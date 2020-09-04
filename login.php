@@ -14,7 +14,7 @@
 		echo "Connection Error";
 	}
 
-	$sql = "SELECT password from testing.customers where name=$username";
+	$sql = "SELECT password from testing.customers where name='$username'";
     echo $sql
 	// if ($conn->query($sql) === TRUE) {
     // header('Location: http://25.29.164.31:5501/SimpleTax.html'); 
