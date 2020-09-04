@@ -38,8 +38,9 @@
 	if ($result->num_rows > 0) {
 		// output data of each row
 		while($row = $result->fetch_assoc()) {
-		//   echo "id: " . $row["name"]. " - Name: " . $row["address"]. " " . $row["password"]. "<br>";
-		echo . $row["password"].;
+		//   echo "id: " . $row["name"]. " - Name: " . $row["address"]. " "
+		  echo . $row["password"].;
+		
 		}
 	  } 
 	  else {
