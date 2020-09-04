@@ -31,7 +31,7 @@
 // $conn->close();
 
 
-header('Location: http://example.com/SimpleTax.html');  
+header('Location: http://SimpleTax.html');  
 ?>
 </body>
 </html>
