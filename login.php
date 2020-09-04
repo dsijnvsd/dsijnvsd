@@ -14,14 +14,14 @@
 		echo "Connection Error";
 	}
 
-	$checkpassword = "SELECT password from testing.customers where name=$username";
-
-	if ($conn->query($sql) === TRUE) {
-    header('Location: http://25.29.164.31:5501/SimpleTax.html'); 
-	}
-	else {
-    echo "Please try again.";
-	}
+	$sql = "SELECT password from testing.customers where name=$username";
+    echo $sql
+	// if ($conn->query($sql) === TRUE) {
+    // header('Location: http://25.29.164.31:5501/SimpleTax.html'); 
+	// }
+	// else {
+    // echo "Please try again.";
+	// }
 
 $conn->close();
 
