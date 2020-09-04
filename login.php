@@ -16,25 +16,25 @@
 		echo "Connection Error";
 	}
 
-	$sql= "select password from testing.customers where firstname = '$fname' and password='$password'";
-
+	// $sql= "select password from testing.customers where firstname = '$fname' and password='$password'";
+	$sql = "select Phone from company"
 	$result = $conn->query($sql);
 
 
-	if ($result->num_rows > 0) {
-		// output data of each row
-		while($row = $result->fetch_assoc()) {
-		//   echo "id: " . $row["name"]. " - Name: " . $row["address"]. " "
-		//   echo $row["password"];
-		  if($row["password"] = $password){
-			header('Location: http://tax123.ca/'); 
+	// if ($result->num_rows > 0) {
+	// 	// output data of each row
+	// 	while($row = $result->fetch_assoc()) {
+	// 	//   echo "id: " . $row["name"]. " - Name: " . $row["address"]. " "
+	// 	//   echo $row["password"];
+	// 	  if($row["password"] = $password){
+	// 		header('Location: http://tax123.ca/'); 
 
-		  }		
-		}
-	  } 
-	  else {
-		echo "username and password are not match";
-	  }
+	// 	  }		
+	// 	}
+	//   } 
+	//   else {
+	// 	echo "username and password are not match";
+	//   }
 
 $conn->close();
 
