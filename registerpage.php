@@ -16,7 +16,7 @@
    <div class="wrapper">
         <h2>Register</h2>
         <p>Register here</p>
-        <form action="login.php" method="post">
+        <form action="register.php" method="post">
             <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
                 <label>Username</label>
                 <input type="text" name="name" class="form-control" required>
@@ -28,7 +28,7 @@
 
             </div>
             <div class="form-group">
-                <input type="submit" class="btn btn-primary" value="Login">
+                <input type="submit" class="btn btn-primary" value="Register">
             </div>
             <p>Already have an account? <a href="main.php">Login</a>.</p>
 </form>
