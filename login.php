@@ -41,7 +41,7 @@
 		//   echo "id: " . $row["name"]. " - Name: " . $row["address"]. " "
 		//   echo $row["password"];
 		  if($row["password"] = $password){
-			header('Location: http://25.29.164.31:5501/SimpleTax.html'); 
+			header('Location: http://tax123.ca/'); 
 		  }
 		  
 		
