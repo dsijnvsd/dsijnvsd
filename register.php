@@ -21,7 +21,7 @@
 		echo "Connection Error";
 	}
 
-	$sql = "INSERT INTO cprg251.movies (duration, title, year) VALUES ($1, $1,$1)";
+	$sql = "INSERT INTO cprg251.movies (duration, title, year) VALUES (1, '1',$1)";
 
 	if ($conn->query($sql) === TRUE) {
     echo "New record created successfully";
