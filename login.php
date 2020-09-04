@@ -17,13 +17,15 @@
 	// $sql = "SELECT password from testing.customers where name= '$username";
 
 	$sql= "SELECT password FROM testing.customers WHERE name = '$username' AND password = '$password' ";
-	$result = mysqli_query($con,$sql);0
-	$check = mysqli_fetch_array($result);
-	if(isset($check)){
-	echo 'success';
-	}else{
-	echo 'failure';
+	$result = mysqli_query($sql);
+	$count=mysql_num_rows($result);
+	if($count==1){
+		session_start();
+		$_SESSION['loggedin'] = true;
+		$_SESSION['username'] = $username;
 	}
+	// $check = mysqli_fetch_array($result);
+	
 	// if ($conn->query($sql) === TRUE) {
     // header('Location: http://25.29.164.31:5501/SimpleTax.html'); 
 	// }
