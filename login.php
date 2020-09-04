@@ -6,8 +6,8 @@
 	// $lname = $_POST["lname"];
 	$password = $_POST["pass"];
 	// $birthday = $_POST["birthday"];
-	$servername = "192.168.0.31";
-	$dbusername = "admin";
+	$servername = "tax123ca26762166";
+	$dbusername = "sql5c10f.megasqlservers.com";
 	$db = "testing";
 	$dbPassword = "20200101";
 	$address = '';
