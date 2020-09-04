@@ -31,7 +31,7 @@
 // $conn->close();
 
 
-header('Location: http://SimpleTax.html');  
+header('Location: https://www.bilibili.com/video/BV11W411172Z?from=search&seid=10394010984910354267');  
 ?>
 </body>
 </html>
