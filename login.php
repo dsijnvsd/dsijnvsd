@@ -1,11 +1,11 @@
 <html><body>
 
 <?php
-	$sinnumber = $_POST["sinnumber"];
+	// $sinnumber = $_POST["sinnumber"];
 	$fname = $_POST["fname"];
-	$lname = $_POST["lname"];
+	// $lname = $_POST["lname"];
 	$password = $_POST["pass"];
-	$birthday = $_POST["birthday"];
+	// $birthday = $_POST["birthday"];
 	$servername = "192.168.0.31";
 	$dbusername = "admin";
 	$db = "testing";

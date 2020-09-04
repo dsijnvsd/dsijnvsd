@@ -7,7 +7,7 @@
 	$lname = $_POST["lname"];
 	$password = $_POST["pass"];
 	$birthday = $_POST["birthday"];
-	$companyname = $_POST["company"];
+	$companyname = $_POST["company_name"];
 	$servername = "192.168.0.31";
 	$dbusername = "admin";
 	$db = "testing";
@@ -18,7 +18,7 @@
 		echo "Connection Error";
 	}
 
-	$sql = "INSERT INTO testing.customers (sin_number, fname, lname, password, birthday, company_name) VALUES ($sinnumber, '$fname', '$lname', '$password','$birthday')";
+	$sql = "INSERT INTO testing.customers (sin_number, firstname, lastname, password, birthday, company_name) VALUES ($sinnumber, '$fname', '$lname', '$password','$birthday','$companyname')";
 
 	if ($conn->query($sql) === TRUE) {
     echo "Your account is successfully created";
