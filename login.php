@@ -16,18 +16,13 @@
 
 	$checkpassword = "SELECT password from testing.customers where name=$username";
 
-	// if ($conn->query($sql) === TRUE) {
-    // echo "New record created successfully";
-	// }
-	// else {
-    // echo "Error: " . $sql . "<br>" . $conn->error;
-	// }
-		if($checkpassword === $password){
-			header('Location: https://simpletax.ca/'); 
-		}
-		else{
-			echo "Please try again.";
-		}
+	if ($conn->query($sql) === TRUE) {
+    header('Location: https://simpletax.ca/'); 
+	}
+	else {
+    echo "Please try again.";
+	}
+
 $conn->close();
 
 
