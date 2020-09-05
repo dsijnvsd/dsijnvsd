@@ -8,20 +8,17 @@
 	$password = $_POST["pass"];
 	$birthday = $_POST["birthday"];
 	$companyname = $_POST["company_name"];
-	$servername = "sql5c10f.megasqlservers.com";
-	$dbusername = "tax123ca26762166";
-	// $db = "testing";
-	$db = "information_tax123ca26762166";
-	
-	$dbPassword = '1990Luboxuan';
+	$servername = "192.168.0.31";
+	$dbusername = "admin";
+	$db = "testing";
+	$dbPassword = '20200101';
 	$address = '';
 	$conn = mysqli_connect($servername, $dbusername,$dbPassword, $db);
 	if ($conn->connect_error) {
 		echo "Connection Error";
 	}
 
-	// $sql = "INSERT INTO testing.customers (sin_number, firstname, lastname, password, birthday, company_name) VALUES ($sinnumber, '$fname', '$lname', '$password','$birthday','$companyname')";
-	$sql = "INSERT INTO company (Company_name) VALUES ( '$fname')";
+	$sql = "INSERT INTO testing.customers (sin_number, firstname, lastname, password, birthday, company_name) VALUES ($sinnumber, '$fname', '$lname', '$password','$birthday','$companyname')";
 
 	if ($conn->query($sql) === TRUE) {
     echo "Your account is successfully created";
